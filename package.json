@@ -4,6 +4,8 @@
   "description": "\"AI-driven Agri-Warehouse Management system with forecasting, analytics, and QR-based inventory tracking.\"",
   "main": "backend/server.js",
   "scripts": {
+    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
+    "start": "node backend/server.js",
     "dev": "nodemon backend/server.js",
     "test:api": "node tests/api-tests.js",
     "test:qr": "node tests/qr-code-tests.js",
