@@ -1,0 +1,33 @@
+{
+  "name": "anilytics",
+  "version": "1.0.0",
+  "description": "\"AI-driven Agri-Warehouse Management system with forecasting, analytics, and QR-based inventory tracking.\"",
+  "main": "backend/server.js",
+  "scripts": {
+    "dev": "nodemon backend/server.js",
+    "test:api": "node tests/api-tests.js",
+    "test:qr": "node tests/qr-code-tests.js",
+    "test:sms": "node tests/sms-service-tests.js",
+    "test": "npm run test:api && npm run test:qr && npm run test:sms"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://repo.rev21labs.com/BFL4_PixelValor/AniLytics.git"
+  },
+  "keywords": [],
+  "author": "",
+  "type": "module",
+  "license": "ISC",
+  "dependencies": {
+    "@neondatabase/serverless": "^1.0.1",
+    "axios": "^1.11.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0",
+    "morgan": "^1.10.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
